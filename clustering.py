@@ -355,16 +355,16 @@ def main():
     # df = calls_to_converations(dataset_path, '2023-07-21', n_from=1, n_to=5)
     # df.to_csv('conversations.csv')
     
-    """# Load conversations
+    # Load conversations
     df = pd.read_csv('conversations.csv')
     
     # Ada v2	$0.0001 / 1K tokens
     
     df = get_embeddings(df, openai_key=openai_key)
-    df.to_csv("embeddings.csv")"""
+    df.to_csv("embeddings.csv")
     # Load embeddings
     # df = pd.read_csv('embeddings.csv')
-    df = pd.read_csv('local_conversations_embeddings.csv')
+    # df = pd.read_csv('local_conversations_embeddings.csv')
     
     # Clustering
     df, matrix = clustering(df, n_clusters=n_clusters)
